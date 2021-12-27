@@ -89,7 +89,7 @@ export const verifySignature = (text, signature, publicKey) => {
         console.log("The signature has been verified")
         return true
     } else {
-        console.log("The signoture has been declined\n")
+        console.log("The signature has been declined\n")
         return false
     }
 }

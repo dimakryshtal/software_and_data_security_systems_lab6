@@ -62,7 +62,7 @@ const dsaPubKey = [
 const testNewFile = () => {
     encryptFile()
     let [signature, file] = getEncryptedFile(encryptedFileName)
-    verify(file, signature, keys.publicKey, keysForEnc.privateKey)
+    verify(file, "../decryptedTestFile", signature, keys.publicKey, keysForEnc.privateKey)
 }
 
 const testAlreadyEncryptedFile = () => {
@@ -72,3 +72,4 @@ const testAlreadyEncryptedFile = () => {
 }
 
 testAlreadyEncryptedFile()
+testNewFile()
